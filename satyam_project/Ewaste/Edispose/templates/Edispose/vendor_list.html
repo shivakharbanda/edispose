@@ -1,0 +1,22 @@
+{% extends "Edispose/base.html" %}
+{% load static %}
+{% block content%}
+    
+
+<div class= "QnA">
+    <h1>VENDOR LIST</h1>
+    {% for post in posts %}
+        <article>
+          <div >
+            <div>
+              <h1>vendor name : {{ post.vendor_name }} </h1>
+              <h2 >{{ post.author }}</h2>
+            </div>
+            <h2>orders completed : {{ post.orders_completed }}</h2>
+            <p>vendor address :{{ post.vendor_address }}</p>
+          </div>
+        </article>
+    {% endfor %}
+</div>
+
+{% endblock content %}

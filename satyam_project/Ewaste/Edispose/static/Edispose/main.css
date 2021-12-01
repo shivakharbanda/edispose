@@ -1,0 +1,123 @@
+
+body {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+.content-section {
+  background: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.top-container {
+    background-color: #F1F0F5;
+}
+
+.mid-container {
+    background-color: #F5F5F5;
+    margin-top: 30px;
+    padding-top: 20px;
+}
+.navbar-brand {
+    font-family: 'Poppins Black 900', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: #4e7466;
+}
+
+
+.footer-link {
+    color: #727070;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.bottom-container {
+    text-align: center;
+    
+}
+
+.footer-link {
+    margin: 10px;
+    text-decoration: none;
+}
+
+.registration {
+    background-color: #6C5B87;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 200px;
+    bottom: 200px;
+}
+
+#register-radio {
+    display: inline-block;
+    text-align: left;
+    background-color: #B9EDDA;
+    margin: 0 auto 0 auto;
+    padding: 20px;
+    width: 200px;
+}
+
+.navbar {
+    padding-bottom: 20px;
+    font-size: 20px;
+    background-color: white;
+    margin-bottom: 30px;
+    
+    
+}
+
+.nav-link {
+    margin: 5px;
+    color: #000000;
+}
+
+#login {
+    margin-top:50px;
+}
+
+form {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  label,
+  input {
+    /* In order to define widths */
+    display: inline-block;
+  }
+  
+  label {
+    width: 20%;
+    /* Positions the label text beside the input */
+    text-align: right;
+  }
+  
+  label+input {
+    width: 20%;
+    /* Large margin-right to force the next element to the new-line
+             and margin-left to create a gutter between the label and input */
+    margin: 0 21% 0 2%;
+  }
+
+  .QnA {
+    background-color: #B9EDDA;
+    margin: 0 auto 0 auto;
+    width: 1000px;
+  }
+
+  .mid-container-h1 {
+    padding-bottom: 30px;
+  }
+
+  .aboutusimg {
+    float: right;
+    margin-right: 10px;
+    border-radius: 20px;
+  }

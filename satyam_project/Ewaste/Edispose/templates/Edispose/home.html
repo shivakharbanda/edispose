@@ -1,0 +1,66 @@
+{% extends "Edispose/base.html" %}
+{% load static %}
+{% block content%}
+    
+<style>
+
+    h1 {
+      background-color: #95c0ff;
+      padding: 20px;
+      margin-bottom: 25px;
+    }
+
+    h2 {
+      background-color: white;
+      display: inline-block;
+    }
+  </style>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  
+  <!--bootstrap navbar-->
+  
+
+<div class="top-container">
+  <section id="intro">
+    
+  <h1>Welcome to Electronic Waste Disposal Portal.</h1>
+  </section>
+{% if not user.is_authenticated %}
+
+  <section>
+    <h2>Sign Up for a free Account</h2>
+  </section>
+  <section>
+    <button><a style="color: black;" href="{% url 'register_as_vendor' %}">I'm a Vendor</a></button>
+    <button><a style="color: black;" href="{% url 'register_as_citizen' %}">I'm a Citizen</a></button>
+    <p>Already Have An Account? <a class="ml-2" href="{% url 'login' %}">Sign In</a></p>
+  </section>
+{% endif %}
+</div>
+
+<div class="mid-container">
+  <h1 class="mid-container-h1">How it Works?</h1>
+
+  <img src="{% static 'Edispose/E-Dispose.jpg' %}" alt="">
+</div>
+
+<div class= "QnA">
+  <h1>Frequenty Asked Questions (Citizens)</h1>
+  <h2>What is E-waste?</h2>
+  <p>E-waste refers to electronic products nearing the end of their "useful life", for example, computers, televisions, VCRs, stereos, copiers, and fax machines. </p>
+  <h2>Q. What is the Electronic Waste Recycling Act? </h2>
+  <p>Ans. E-waste is to be regulated by E-Waste Management Rule 2016 issued by Central Pollution Control Board (CPCB),Government of India. For more information on this law and its implementation, please see the link <a href="cpcb.nic.in/displaypdf.php">cpcb.nic.in/displaypdf.php</a></p>
+  <h2>Q. How do I recycle and dispose of electronic scrap? </h2>
+  <p>Ans. Since electronic waste is subject to India's hazardous waste regulations, it must be reused, recycled, or disposed of properly. Please do not put these items in the garbage or recycle bins. You may login into the application using your Mobile Number. We will contact you and collect the e-waste from your premises and pay you for that. </p>
+  <h2>Q. Who can sell e-waste through this Application? </h2>
+  <p>Ans. Any Citizen residing in NDMC Area can sell his/her E-waste through this application. </p>
+  <h2>Q. What are the rates of E-Waste items? </h2>
+  <p>Ans. Payment Shall be done by the vendor to you as per rates given in the "List of Approved rates of E-waste Items". The rates may be seen after register into the application. </p>
+</div>
+{% endblock content %}
